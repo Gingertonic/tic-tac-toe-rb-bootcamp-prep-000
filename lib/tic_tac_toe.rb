@@ -16,23 +16,23 @@ WIN_COMBINATIONS = [
 #   puts "-----------"
 #   puts " #{board[6]} | #{board[7]} | #{board[8]} "
 # end
-# 
+#
 # def input_to_index(input)
 #   input.to_i - 1
 # end
-# 
+#
 # def move(board, index, character = "X")
 #   board[index] = character
 # end
-# 
+#
 # def position_taken?(board, location)
 #   board[location] != " " && board[location] != ""
 # end
-# 
+#
 # def valid_move?(board, index)
 #   index.between?(0,8) && !position_taken?(board, index)
 # end
-# 
+#
 # def turn(board)
 #   puts "Please enter 1-9:"
 #   input = gets.strip
@@ -44,7 +44,7 @@ WIN_COMBINATIONS = [
 #     turn(board)
 #   end
 # end
-# 
+#
 # def turn_count(board)
 #   count = 0
 #   board.each do |i|
@@ -53,11 +53,11 @@ WIN_COMBINATIONS = [
 #     end
 #   return count
 # end
-# 
+#
 # def current_player(board)
 #   turn_count % 2 == 0 ? "X" : "O"
 # end
-# 
+#
 # def won?(board)
 #   WIN_COMBINATIONS.each do |win_combination|
 #     result = []
@@ -70,19 +70,19 @@ WIN_COMBINATIONS = [
 #   end
 #     return false
 # end
-# 
+#
 # def full?(board)
 #   board.all? {|i| i == "X" || i == "O"}
 # end
-# 
+#
 # def draw?(board)
 #   (full?(board) && !won?(board)) ? true : false
 # end
-# 
+#
 # def over?(board)
 #   (won?(board) || draw?(board)) ? true : false
 # end
-# 
+#
 # def winner(board)
 #   if won?(board)
 #     test = won?(board)[0]
