@@ -65,30 +65,30 @@ def turn(board)
   end
 end
 
-# def turn_count(board)
-#   count = 1
-#   board.each do |i|
-#     if i == "X" || i == "O"
-#       count += 1
-#     end
-#     return count
-#   end
-# end
-#
+def turn_count(board)
+  count = 1
+  board.each do |i|
+    if i == "X" || i == "O"
+      count += 1
+    end
+    return count
+  end
+end
+
 # def current_player(board)
 #   turn_count % 2 == 0 ? "X" : "O"
 # end
 
-def turn_count(board)
-  count = 0
-  board.each do |move|
-    if move == "X" || move == "O"
-      count += 1
-    end
-  end
-  count
-end
-
+# def turn_count(board)
+#   count = 0
+#   board.each do |move|
+#     if move == "X" || move == "O"
+#       count += 1
+#     end
+#   end
+#   count
+# end
+# 
 def current_player(board)
   turn_count(board).even? ? "X" : "O"
 end
