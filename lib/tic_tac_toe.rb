@@ -74,7 +74,7 @@ end
 #     return count
 #   end
 # end
-# 
+#
 # def current_player(board)
 #   turn_count % 2 == 0 ? "X" : "O"
 # end
@@ -88,7 +88,7 @@ def turn_count(board)
   end
   count
 end
- 
+
 def current_player(board)
   turn_count(board).even? ? "X" : "O"
 end
